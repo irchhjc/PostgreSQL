@@ -1,0 +1,11 @@
+CD_MATIERE|LB_MATIERE|NB_COEF|CD_TYPE_MATIERE|ID_ENSEIGNANT
+M001|Mathématiques|3|TM01|ENS001
+M002|Statistiques|3|TM01|ENS002
+M003|Probabilité|2|TM01|ENS003
+M004|Algorithmique et Programmation|2|TM02|ENS004
+M005|Architecture de l’ordinateur|2|TM02|ENS005
+M006|Système d’exploitation|2|TM02|ENS006
+M007|Bases de données|2|TM02|ENS007
+M008|Comptabilité Générale|2|TM03|ENS008
+M009|Mathématique Financéres|2|TM03|ENS009
+M010|Anglais des TIC|2|TM04|ENS010
