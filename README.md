@@ -45,15 +45,9 @@ pgAdmin :
 - password: admin
 
 ## 5) Exécuter sans Docker
-Créer un environnement :
+Installer les dépendances avec Poetry :
 ```bash
-python -m venv .venv
-# Windows
-.venv\Scripts\activate
-# Linux/macOS
-source .venv/bin/activate
-
-pip install -r requirements.txt
+poetry install
 ```
 
 Définir les variables :
@@ -68,7 +62,7 @@ $env:DB_PASSWORD="postgres"
 
 Puis lancer :
 ```bash
-python scripts/load_data.py
+poetry run python scripts/load_data.py
 ```
 
 ## 6) Vérifications SQL

@@ -2,8 +2,14 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# Install Poetry
+RUN pip install poetry
+
+# Copy pyproject.toml and poetry.lock
+COPY pyproject.toml poetry.lock ./
+
+# Install dependencies
+RUN poetry config virtualenvs.create false && poetry install --no-dev --no-interaction --no-ansi
 
 COPY sql ./sql
 COPY scripts ./scripts
